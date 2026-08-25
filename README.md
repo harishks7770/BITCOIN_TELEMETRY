@@ -30,3 +30,12 @@ A containerized real-time streaming pipeline that ingests live Bitcoin (`BTCUSDT
 ┌───────────────────────┐
 │  Fabric KQL Database  │  --> (Transformed via KQL Update Policy)
 └───────────────────────┘
+
+
+
+
+## 🛠️ Tech Stack
+
+* **Streaming:** Binance WebSocket API ➔ Python 3.11 ➔ Azure Event Hubs
+* **Runtime:** Docker Container (`python:3.11-slim`)
+* **Analytics:** Microsoft Fabric Eventstream ➔ KQL Database (Update Policies)
