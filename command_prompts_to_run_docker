@@ -1,0 +1,12 @@
+#Build a docker container
+docker build -t binance_stream_job 
+
+#Run the container
+docker run -d --name binance_stream_job --env-file .env binance_stream_job
+
+⚡ Monitoring & Maintenance
+Start Container: docker start binance_stream_job
+
+Stop Container: docker stop binance_stream_job
+
+View Live Stream Logs: docker logs -f binance_stream_job
